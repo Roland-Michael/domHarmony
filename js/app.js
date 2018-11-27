@@ -42,7 +42,9 @@ paraNine.innerHTML = "I'm a simple man. I like beans and rice.";
 profile.appendChild(paraNine);
 //10. In the div id matches section, target the first div element with the class name of firstName and change Name to Wendy.
 var nameTen = document.getElementsByClassName ('firstName');
-nameTen[0].innerHTML = 'Wendy';
+console.log(nameTen.length); //3 total
+nameTen[0].innerHTML = 'Wendy'; //[0] targets first element in the array
+
 //11. In the div id matches section, target the first div element with the class name of otherAge and change Age to 48.
 var ageEleven = document.getElementsByClassName('otherAge');
 ageEleven[0].innerHTML = 48;
@@ -52,9 +54,11 @@ var statusTwelve = document.getElementsByClassName('status');
 statusTwelve[0].innerHTML = 'Single Mother';
 
 //13. In the div id matches section, target the second div element with the class name of firstName and change Name to Peko Chan.
-
+var nameThirteen = document.getElementsByClassName('firstName');
+nameThirteen[1].innerHTML = "Peko Chan";
 //14. In the div id matches section, target the second div element with the class name of otherAge and change Age to 68.
-
+var ageFourteen = document.getElementsByClassName('otherAge');
+ageFourteen[1].innerHTML = 68;
  //Final Boss Create your own profile into the page:
  //change image to match your profile
  //div with class name of firstName
